@@ -1,0 +1,7 @@
+---
+title: "p8105_HW1_JP3665_take2"
+author: "Joana Petrescu"
+date: "9/24/2020"
+output: github_document
+---
+
