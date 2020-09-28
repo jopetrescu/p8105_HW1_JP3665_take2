@@ -118,6 +118,22 @@ nrow(penguins)
 
 ncol(penguins)
 
-mean(penguins$flipper_length_mm)
+flipper_length <- as.numeric(penguins$flipper_length_mm)
+flipper_length <- na.omit(flipper_length)
+mean(flipper_length)
 
 ```
+
+Plot flipper length vs. bill length
+
+```{r}
+
+library(ggplot2)
+
+ggplot(penguins, aes(x=bill_length_mm, y=flipper_length_mm, color = species)) + geom_point(shape=19)
+
+ggsave("penguins_plot.pdf")
+
+```
+
+
