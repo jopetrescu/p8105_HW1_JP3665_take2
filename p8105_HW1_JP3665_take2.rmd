@@ -99,3 +99,25 @@ factlogic * vrandom
 as.numeric(factlogic) * vrandom
 
 ```
+
+# Problem 2
+
+About the `penguins` dataset
+
+```{r, echo=TRUE}
+
+data("penguins", package = "palmerpenguins")
+
+colnames(penguins)
+
+levels(penguins$species)
+
+levels(penguins$island)
+
+nrow(penguins)
+
+ncol(penguins)
+
+mean(penguins$flipper_length_mm)
+
+```
